@@ -1,0 +1,387 @@
+/* Elliptical Button Base */
+.btn-ellipse {
+  display: inline-block;
+  padding: 20px 80px;
+  border-radius: 100px / 40px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-green {
+  background-color: #5cb85c;
+}
+.btn-blue {
+  background-color: #5dade2;
+}
+.btn-purple {
+  background-color: #9b59b6;
+}
+.btn-darkblue {
+  background-color: #1c3c7c;
+}
+
+/* Footer Grid */
+.footer-grid {
+  background: #4db8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.footer-col {
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.footer-icon {
+  font-size: 2.5rem;
+  color: #222;
+}
+.footer-pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-bottom {
+  background: #4db8cc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-bottom-left {
+  padding: 30px 40px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer-bottom-right {
+  padding: 30px 40px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+}
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Simple Header Color */
+header {
+  background-color: #4db8cc;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header > div:first-child ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+header form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  gap: 10px;
+}
+
+header input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+header button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+header > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header i {
+  font-size: 24px;
+}
+
+/* Simple Navigation Color */
+nav {
+  background-color: #000;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  flex: 1;
+  min-width: 150px;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+
+nav li:last-child a {
+  border-right: none;
+}
+
+/* Simple Hover */
+nav a:hover {
+  background-color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4db8cc;
+  padding: 40px;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+}
+
+/* Payment image size class */
+.payment-img {
+  height: 28px;
+  width: auto;
+  margin-right: 8px;
+}
+
+footer li {
+  color: #000;
+  font-size: 16px;
+}
+
+footer p {
+  color: #000;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Quick links / button grid (clean, no repetitions) */
+.submenu_container {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.submenu_grid_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+.grid_submenu { text-align: center; }
+.grid_submenu a.btn-ellipse {
+  display: inline-block;
+  padding: 20px 60px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+  /* Button color assignments (matching provided screenshots) */
+  .home_button{ background: linear-gradient(180deg,#36c46c 0%, #28a45a 100%); }
+  .Events_button{ background: linear-gradient(180deg,#40bfc7 0%, #2f9ea6 100%); }
+  .Museum_button{ background: linear-gradient(180deg,#b158d8 0%, #9b59b6 100%); }
+  .Exhibition_button{ background: linear-gradient(180deg,#4b49c7 0%, #3b41b5 100%); }
+  .Explore_button{ background: linear-gradient(180deg,#36c46c 0%, #28a45a 100%); }
+  .Visit_Us_button{ background: linear-gradient(180deg,#40bfc7 0%, #2f9ea6 100%); }
+
+  /* Ensure high contrast and consistent hover for colored anchors */
+  .grid_submenu a.btn-ellipse{ color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.15) }
+  .grid_submenu a.btn-ellipse:focus{ outline:3px solid rgba(255,255,255,0.14); outline-offset:4px }
+.grid_submenu a.btn-ellipse:hover {
+  /* intentionally no visual change on hover per request */
+  transform: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* compatibility for HTML class name variant */
+.Events_button_button{ background: linear-gradient(180deg,#40bfc7 0%, #2f9ea6 100%); }
+
+@media (max-width: 900px) {
+  .submenu_grid_container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .submenu_grid_container { grid-template-columns: 1fr; }
+  .grid_submenu a.btn-ellipse { width: 100%; padding: 14px 20px; min-width: 0; box-sizing: border-box; }
+  /* reduce section paddings on small phones */
+  .submenu_container { padding: 28px 12px; }
+  header { padding: 10px 12px; }
+  /* Show a compact, full-width search on small screens rather than hiding it */
+  header{ flex-direction: column; align-items: stretch; }
+  header form { display: flex; width: 100%; gap: 8px; margin-top: 8px; }
+  header input[type="text"]{ flex: 1; min-width: 0; padding: 10px 12px; border-radius:6px; }
+  header button[type="submit"]{ padding: 10px 12px; border-radius:6px }
+  header > div:first-child ul { font-size: 16px; }
+  header > div:first-child ul { flex-wrap: wrap; }
+  header > div:first-child ul li { min-width: 0; }
+  .homeimages-middle { grid-template-columns: 1fr; gap: 18px; padding: 18px 12px; }
+  .home_article1_container .lead { margin: 20px 12px; font-size: 1rem }
+  /* Make footer stack vertically on small screens so nothing is clipped */
+  footer > div { grid-template-columns: 1fr !important; gap: 20px; padding: 20px; }
+  .footer-grid { display: block; }
+  .footer-col { padding: 18px 12px; text-align: left; }
+  .footer-bottom { display: block; padding: 12px; }
+  .footer-bottom-left, .footer-bottom-right { text-align: center; padding: 12px 0 }
+}
+
+/* Improve top nav behavior on narrow portrait screens: use a grid so labels don't overlap */
+@media (max-width: 600px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    align-items: stretch;
+  }
+  nav li { flex: none; min-width: 0; }
+  nav a {
+    padding: 10px 12px;
+    font-size: 16px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  /* On very small phones, stack nav into a single column to avoid cramped labels */
+  nav ul { grid-template-columns: 1fr; }
+  nav a { font-size: 15px; padding: 10px 10px; }
+}
+
+/* Image and two-column content adjustments */
+.homeimages-middle { display: flex; align-items: center; gap: 40px; padding: 60px 40px; }
+.homeimages-middle .kid-img { flex: 0 0 40%; width: 40%; max-width: 360px; height: auto; border-radius: 8px; display: block; object-fit: cover; }
+.homeimages-middle .home_article2_container { flex: 1 1 60%; padding: 0 20px; }
+
+@media (max-width: 900px) {
+  .homeimages-middle { padding: 32px 20px; gap: 20px; }
+}
+
+@media (max-width: 600px) {
+  .homeimages-middle { display: flex; flex-direction: column; align-items: stretch; padding: 18px 12px; gap: 12px; }
+  .homeimages-middle .kid-img { max-height: 220px; width: 100%; object-fit: cover; }
+  .homeimages-middle .home_article2_container { padding: 0; }
+  .homeimages-middle .home_article2_container h2 { font-size: 22px; text-align: center; }
+  .homeimages-middle .home_article2_container p { font-size: 15px; line-height: 1.5; }
+}
+
+/* Hero image sizing (limit height and use object-fit to avoid pushing layout) */
+.hero-section { width:100%; overflow:hidden; }
+.hero-img { width:100%; display:block; height:auto; max-height:420px; object-fit:cover; border-radius:6px; }
+
+@media (max-width: 900px) {
+  .hero-img { max-height:320px; }
+}
+
+@media (max-width: 600px) {
+  .hero-img { max-height:180px; }
+}
+
+/* Prevent horizontal overflow on small screens: ensure media and long text don't create extra width */
+/* Constrain media elements globally */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Allow text containers to shrink and wrap long words */
+.home_article2_container, .home_article2_container * {
+  min-width: 0;
+}
+.home_article2_container p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 600px) {
+  /* hide any residual horizontal overflow on very small screens */
+  html, body { overflow-x: hidden; }
+  /* make nav items able to wrap instead of forcing width */
+  nav ul { flex-wrap: wrap; }
+  nav li { min-width: 0; }
+}
